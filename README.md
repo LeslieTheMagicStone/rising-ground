@@ -1,16 +1,75 @@
-# Bomber
+# Rising Ground
 
-## 1. Movement
+A physics-based platformer prototype developed in **Unity**.
 
-- 1.1 Use WASD or arrow keys to move
-- 1.2 Use Space to jump
+In this game, the ground continuously rises while players must use bombs to destroy terrain, defeat enemies, and survive until the laser clock completes one round.
 
-## 2. Bomb
+---
 
-- 2.1 Left click mouse to throw bomb
-- 2.2 Right click mouse to switch bomb type
+## Gameplay
 
-## 3. How to Win
+Players navigate an environment where the ground constantly rises over time.  
+To survive, they must strategically use bombs to destroy terrain, defeat enemies, and create paths to climb upward.
 
-- 3.1 Survive until the lazer clock finish one round
-- 3.2 Easter egg: some changes happen after you win
+Explosions also generate physical force that can knock the player away, creating a **risk–reward gameplay loop**. Poor positioning or timing may cause the player to be pushed off platforms.
+
+Players can also collect items that grant special effects and switch between different bomb types depending on the situation.
+
+---
+
+## Controls
+
+### Movement
+
+- **WASD / Arrow Keys** — Move  
+- **Space** — Jump  
+
+### Bomb
+
+- **Left Click** — Throw bomb  
+- **Right Click** — Switch bomb type  
+
+---
+
+## Bomb Types
+
+- **Standard Bomb**  
+  Destroys terrain blocks and generates explosion knockback.
+
+- **Blue Bomb**  
+  Produces a strong shockwave but does not destroy terrain.
+
+---
+
+## Gameplay Systems
+
+- **Destructible terrain system** based on grid-generated cube blocks  
+- **Physics-based explosion mechanics** with player knockback  
+- **Trajectory prediction system** that calculates projectile motion and visualizes bomb landing positions  
+- **Item pickup system** that grants temporary gameplay effects  
+- **Player visibility system** that makes terrain blocks transparent when they obstruct the player's view  
+- Dynamic platforming challenge with **continuously rising terrain**
+
+---
+
+## How to Win
+
+- Survive until the **laser clock completes one round**
+
+- **Easter Egg:**  
+  Something unexpected happens after winning the round.
+
+---
+
+## Tech Stack
+
+- **Unity 2022**
+- **C#**
+- Unity Physics / Rigidbody interactions
+- Grid-based terrain generation
+
+---
+
+## Demo
+
+https://www.bilibili.com/video/BV1458ce7EHh/
