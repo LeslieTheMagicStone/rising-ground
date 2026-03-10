@@ -74,3 +74,6 @@ crashlytics-build.properties
 # Test stuff
 /[Aa]ssets/_Dev.meta
 /[Aa]ssets/_Dev/
+
+# vscode settings
+.vscode/
