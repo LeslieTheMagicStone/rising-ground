@@ -2,7 +2,7 @@
 
 ![Terrian Collapse](docs/collapse.gif)
 
-A physics-based platformer prototype developed in **Unity**.
+A physics-based platformer prototype developed in Unity.
 
 In this game, the ground continuously rises while players must use bombs to destroy terrain, defeat enemies, and survive until the laser clock completes one round.
 
@@ -62,7 +62,7 @@ Players can also collect items that grant special effects and switch between dif
 
 ## How to Win
 
-- Survive until the **laser clock completes one round**
+- Survive until the laser clock completes one round
 
 - **Easter Egg:**  
   Something unexpected happens after winning the round.
@@ -71,7 +71,7 @@ Players can also collect items that grant special effects and switch between dif
 
 ## Tech Stack
 
-- **Unity**
-- **C#**
+- Unity
+- C#
 - Unity Physics / Rigidbody interactions
 - Grid-based terrain generation
