@@ -1,8 +1,12 @@
 # Rising Ground
 
+![Terrian Collapse](docs/collapse.gif)
+
 A physics-based platformer prototype developed in **Unity**.
 
 In this game, the ground continuously rises while players must use bombs to destroy terrain, defeat enemies, and survive until the laser clock completes one round.
+
+Demo: [Bilibili Gameplay Video](https://www.bilibili.com/video/BV1458ce7EHh/)
 
 ---
 
@@ -36,8 +40,12 @@ Players can also collect items that grant special effects and switch between dif
 - **Standard Bomb**  
   Destroys terrain blocks and generates explosion knockback.
 
-- **Blue Bomb**  
+![Standard Bomb Demo](docs/standard.gif)
+
+- **Shockwave Bomb**  
   Produces a strong shockwave but does not destroy terrain.
+
+![Shockwave Bomb Demo](docs/shockwave.gif)
 
 ---
 
@@ -63,13 +71,7 @@ Players can also collect items that grant special effects and switch between dif
 
 ## Tech Stack
 
-- **Unity 2022**
+- **Unity**
 - **C#**
 - Unity Physics / Rigidbody interactions
 - Grid-based terrain generation
-
----
-
-## Demo
-
-https://www.bilibili.com/video/BV1458ce7EHh/
