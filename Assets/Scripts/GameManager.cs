@@ -78,14 +78,27 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (PlayerPrefs.GetString("HasWon", "false") == "true")
+        bool hasWon = PlayerPrefs.GetString("HasWon", "false") == "true";
+
+        if (hasWon)
         {
             Time.timeScale = 0f;
             selectModePanel.SetActive(true);
+
+            normalModeButton.onClick.RemoveAllListeners();
+            infiniteModeButton.onClick.RemoveAllListeners();
+
             normalModeButton.onClick.AddListener(() => SelectInfiniteMode(false));
             normalModeButton.onClick.AddListener(() => { Time.timeScale = 1f; selectModePanel.SetActive(false); gameState = GameState.Running; });
             infiniteModeButton.onClick.AddListener(() => SelectInfiniteMode(true));
             infiniteModeButton.onClick.AddListener(() => { Time.timeScale = 1f; selectModePanel.SetActive(false); gameState = GameState.Running; });
+        }
+        else
+        {
+            Time.timeScale = 1f;
+            isInfiniteMode = false;
+            gameState = GameState.Running;
+            selectModePanel.SetActive(false);
         }
 
         startTime = Time.time;
